@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .button-add{
+        @apply border-purple-300 bg-purple-400 w-12 h-8 border  rounded-md text-gray-200 ;
+    }
+  }
