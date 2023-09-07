@@ -1,0 +1,33 @@
+<div>
+    	
+    <ul>        
+		<li *ngFor="let do of someStrings; let i = index"
+        class="border px-2 border-pink-300 bg-purple-800 m-4 text-gray-200 rounded text-clip break-all">		
+
+				<app-edit-form 
+				*ngIf="id ==i"
+        [currentTask]="currentTask" (taskChange)="UpdateItem($event)">
+				</app-edit-form>
+
+				<div 				
+				*ngIf="id !=i"
+				class="flex flex-row place-items-center justify-between content-between space-x-2">
+
+					<div class="flex grow m-1 place-content-start text-left">
+						{{do.tempString}}         	   		
+					</div>
+
+					<div>
+						<input class="m-1 flex-none" type="image" src="assets\images\pencil-square.svg" name="edit" 
+						(click)="EditItem(i,do.tempString)"/>
+					</div>
+
+					<div>
+						<input class="m-1 flex-none" type="image" src="assets\images\trash.svg" name="delete" 
+						(click)="DeleteItem(i)"/>
+					</div>
+
+				</div>
+      </li>
+    </ul>
+</div>
