@@ -1,0 +1,9 @@
+.test{
+    background-color: #1A1A40;
+    width: 75%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }

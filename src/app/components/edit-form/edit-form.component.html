@@ -1,0 +1,17 @@
+<div *ngIf="currentTask.visible === true" class="p-0  bg-purple-800 m-0 text-gray-200 rounded text-clip" >
+    <div class="flex justify-between content-between space-x-6 text-clip">
+			
+        <div class="float-left w-3/4 mt-2">
+            <input class="test " 
+            [ngModel]="currentTask.task" (ngModelChange)="onTaskChange($event)" />
+        </div>
+        <div>
+            <input class="m-1" type="image" src="assets\images\check-lg.svg" name="edit"             
+            (click)="Update()"/>
+        </div>
+        <div>
+            <input class="m-1" type="image" src="assets\images\x-circle.svg" name="delete" 
+            (click)="CancelChanges()"/>
+        </div>
+    </div>
+</div>
