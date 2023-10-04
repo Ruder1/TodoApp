@@ -1,5 +1,8 @@
 # TodoApp
 
+
+This repository was migrated from https://gitlab.com/Ruder1/angular-todo-project
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 This project is stoped. Developing is finished
